@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  * 拒绝访问异常
+ * 表示没有权限
  *
  * @author 田尘殇Sean(sean.snow @ live.com) Create At 16/9/9
  */

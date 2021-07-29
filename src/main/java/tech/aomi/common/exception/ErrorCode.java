@@ -15,6 +15,7 @@ public enum ErrorCode {
     VERSION_ERROR("3003", "版本错误"),
     EXPIRED_ERROR("3004", "过期"),
 
+
     MIN_VALUE("3008", "输入的值小于最低值"),
     MAX_VALUE("3009", "输入的值大于最大值"),
 
@@ -28,8 +29,12 @@ public enum ErrorCode {
     REQUEST_METHOD_NOT_SUPPORTED("3202", "request method not supported"),
     SERVICE_NOT_IMPL("3203", "服务未实现"),
 
+    // 表示未登录
     UNAUTHORIZED("3210", "unauthorized"),
+    // 无效的
     INVALID_CREDENTIAL("3211", "invalid credential"),
+    PASSWORD_ERROR("3212", "密码错误"),
+
 
     ACCESS_DENIED("3250", "No access permission"),
     // 从 3200 - 3250 为系统类错误代码结束
