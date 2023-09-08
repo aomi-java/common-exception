@@ -44,6 +44,10 @@ public enum ErrorCode {
     RESOURCE_EXIST("3301", "resource exist"),
     RESOURCE_NON_EXIST("3302", "resource non exist"),
     RESOURCE_STATUS("3303", "resource status exception"),
+    /**
+     * 资源审核中
+     */
+    RESOURCE_REVIEW("3304", "resource in review")
     // 从 3301 - 3400 为资源相关错误代码结束
     ;
 
