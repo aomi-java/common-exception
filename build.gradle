@@ -1,18 +1,24 @@
 plugins {
-    id "io.franzbecker.gradle-lombok" version "2.2"
+    id 'java'
+    id "io.freefair.lombok" version "8.1.0"
 }
 
 group 'tech.aomi.common'
-version '1.0.1-SNAPSHOT'
+version '1.0.2-SNAPSHOT'
 
 apply from: 'https://onegit.com/enterprise/public/raw/master/libraries.gradle'
-apply from: 'https://onegit.com/enterprise/public/raw/master/java.gradle'
-apply from: 'https://onegit.com/enterprise/public/raw/master/idea.gradle'
-//apply from: 'https://onegit.com/enterprise/public/raw/master/publishing-with-source.gradle'
+apply from: 'https://onegit.com/enterprise/public/raw/master/spring-libraries.gradle'
 apply from: 'https://onegit.com/enterprise/public/raw/master/publish-center.gradle'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_20
+}
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+    }
 }
 
 dependencies {
