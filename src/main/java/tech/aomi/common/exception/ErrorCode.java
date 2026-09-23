@@ -20,6 +20,9 @@ public enum ErrorCode {
     MAX_VALUE("3009", "输入的值大于最大值"),
 
     SIGNATURE_INVALID("3011", "无效的签名"),
+    MESSAGE_ENCRYPT("3012", "数据加密失败"),
+    MESSAGE_DECRYPT("3013", "数据解密失败"),
+
     // 从 3001 - 3199 开始为参数错误类代码 结束
 
 
