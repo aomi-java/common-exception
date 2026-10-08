@@ -37,6 +37,10 @@ public enum ErrorCode {
     // 无效的
     INVALID_CREDENTIAL("3211", "invalid credential"),
     PASSWORD_ERROR("3212", "密码错误"),
+    ACCOUNT_LOCKED_ERROR("3213", "locked"),
+    ACCOUNT_DISABLED_ERROR("3214", "disabled"),
+    ACCOUNT_EXPIRED_ERROR("3215", "expired"),
+    ACCOUNT_CREDENTIAL_EXPIRED_ERROR("3216", "credential expired"),
 
 
     ACCESS_DENIED("3250", "No access permission"),
